@@ -9,7 +9,7 @@ app.use(express.static(path.join(__dirname,'/dist')))
 
 let cached;
 
-app.get('*', async (req,res) => {
+app.get('/*', async (req,res) => {
 	let file;
 
 	console.log(typeof cached == "undefined")
