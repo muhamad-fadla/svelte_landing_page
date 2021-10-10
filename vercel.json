@@ -2,7 +2,7 @@
 
     "rewrites": [{ "source": "/(.*)", "destination": "/" }],
 	"functions": {
-	    "Functions/server.js": {
+	    "_Functions/server.js": {
 	      "includeFiles": "dist/**"
 	    }
 	}
