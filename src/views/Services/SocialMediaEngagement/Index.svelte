@@ -3,7 +3,6 @@
 	import Layout from '@component/Layout.svelte';
 
 	import { Grid } from "gridjs";
-	import "gridjs/dist/theme/mermaid.css";
 
 	let tables = new Grid({
 		  columns: ['#', 'Nama Layanan', 'Kategori', 'Harga', 'Harga Reseller'],
@@ -19,6 +18,10 @@
 	})
 
 </script>
+
+<style lang="postcss">
+	@import url("https://unpkg.com/gridjs@5.0.2/dist/theme/mermaid.min.css");
+</style>
 
 <Layout title="Social Media Engagement" description="Social Media Engagement - Jasa Social Media & Digital Marketing Indonesia dengen harga terjangkau.">
 

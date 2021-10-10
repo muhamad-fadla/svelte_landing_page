@@ -11,8 +11,6 @@
 	export let description = "Jasa Social Media & Digital Marketing Indonesia dengen harga terjangkau";
 	export let keywords = "social media, social media marketing, digital merketing, followers, instgram followers free - " + brand_domain;
 
-	export let normalize= true;
-
 	// onMount(() => {
 
 	// 	console.log(normalize)
