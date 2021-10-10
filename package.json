@@ -5,9 +5,9 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "ssr:dev": "nodemon ./Functions/server",
-    "ssr:start": "node ./Functions/server",
-    "start": "node ./Functions/server"
+    "ssr:dev": "nodemon ./server",
+    "ssr:start": "node ./server",
+    "start": "node ./server"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.11",
