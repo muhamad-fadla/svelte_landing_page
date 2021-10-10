@@ -1,13 +1,11 @@
 {
   "version": 2,
-  "env": {
-  },
   "builds": [
     {
       "src": "./server.js",
       "use": "@vercel/node",
       "config": { "includeFiles": ["dist/**"] }
-    },
-  
+    }
+ 
   ]
 }
