@@ -5,7 +5,6 @@ const fs = require('fs')
 const path = require('path')
 
 
-
 app.use(express.static(path.resolve('./../dist')))
 
 app.get('*', async (req,res) => {
