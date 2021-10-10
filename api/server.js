@@ -15,7 +15,7 @@ app.get('*', async (req,res) => {
 
 	if(typeof cached == 'undefined'){
 		console.log('Storage cached')
-		file = fs.readFileSync(path.join(__dirname, '/../dist/index.html'));
+		file = fs.readFileSync(path.join(__dirname, '/../dist/dot.html'));
 		cached = file;
 	}else{
 		console.log('use cached')
