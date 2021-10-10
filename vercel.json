@@ -1,8 +1,13 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/dist" }],
-  "functions": {
-    "api/server.js": {
-      "includeFiles": "dist/**"
-    }
-  }
+  "version": 2,
+  "env": {
+  },
+  "builds": [
+    {
+      "src": "./server.js",
+      "use": "@vercel/node",
+      "config": { "includeFiles": ["dist/**"] }
+    },
+  
+  ]
 }

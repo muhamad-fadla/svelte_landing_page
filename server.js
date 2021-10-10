@@ -5,7 +5,7 @@ const fs = require('fs')
 const path = require('path')
 
 
-app.use(express.static(path.resolve('./dist')))
+app.use(express.static(path.join(__dirname,'/dist')))
 
 let cached;
 
@@ -16,7 +16,7 @@ app.get('*', async (req,res) => {
 
 	if(typeof cached == 'undefined'){
 		console.log('Storage cached')
-		file = fs.readFileSync(path.resolve('./dist/index.html'));
+		file = fs.readFileSync(path.join(__dirname, '/dist/dot.html'));
 		cached = file;
 	}else{
 		console.log('use cached')
