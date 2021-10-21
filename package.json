@@ -6,7 +6,9 @@
     "build": "vite build",
     "serve": "vite preview",
     "ssr:dev": "nodemon ./server",
-    "ssr:start": "node ./server"
+    "ssr:start": "node ./server",
+    "build:deploy": "vite build --base=https://miaw.my-topup.store/ && ./deploy.sh",
+    "deploy": "./deploy.sh"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.11",
@@ -15,13 +17,17 @@
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.3",
+    "@sergeymakinen/vite-plugin-html-minimize": "^1.0.0",
     "autoprefixer": "^10.3.7",
     "awesome-graphql-client": "^0.9.1",
+    "compression": "^1.7.4",
     "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
     "express": "^4.17.1",
     "gridjs": "^5.0.2",
     "postcss": "^8.3.9",
     "purgecss-from-svelte": "^2.0.2",
+    "serve-static": "^1.14.1",
     "svelte-add": "^2021.10.0-2.0",
     "svelte-navigator": "^3.1.5",
     "themify-icons": "^1.0.0"

@@ -17,7 +17,7 @@
     <nav class="navbar navbar-expand-lg fixed-top custom-nav white-bg affix">
         <div class="container">
             <a class="navbar-brand" href="/">
-            	<img src="//www.my-topup.store/assets/img/favicon.webp" width="60" alt="logo" class="img-fluid">
+            	<img src="https://miaw.my-topup.store/assets/img/favicon.webp" width="60" alt="logo" class="img-fluid">
             </a>
             <button on:click={handleExpandNavbar} class="navbar-toggler navbar-toggler-d" type="button" id="mobile--nav-btn" aria-controls="navbar--main" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="ti-menu nse"></span>

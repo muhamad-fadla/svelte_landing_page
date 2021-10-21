@@ -1,57 +1,19 @@
 <script>
 	import Layout from '@component/Layout.svelte';
+	import DoHero from '@component/DoHero.svelte'
+	import Hero from '@component/Hero.svelte'
 </script>
 
 
 <Layout >
 	<!--hero section start-->
-    <section class="hero-section hero-section-3 ptb-100">
-        <!--animated circle shape start-->
-        <div class="circles">
-            <div class="point animated-point-1"></div>
-            <div class="point animated-point-2"></div>
-            <div class="point animated-point-3"></div>
-            <div class="point animated-point-4"></div>
-            <div class="point animated-point-5"></div>
-            <div class="point animated-point-6"></div>
-        </div>
-        <!--animated circle shape end-->
-        <div class="container" id="animation-area-1">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-                    <div class="hero-content section-title text-center text-lg-left my-5 mt-lg-0">
-                        <span class="text-uppercase color-secondary font-weight-bold">Sebuah Kata</span>
-                        <h1 class="font-weight-bold">Sebuah Solusi Untuk UMKM Indonesia</h1>
-                        <p class="lead">Sebuah layanan peningkatkan interaksi akun untuk menambah kepercayaan konsumen terhadap brand Anda di Social Media.</p>
-                        <div class="action-btn mt-4">
-                            <a href="/" class="btn solid-btn">Daftar Sekarang</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-9 col-md-7 col-lg-5 offset-xl-1 align-self-sm-end">
-                    <div class="hero-img position-relative">
-                        <div class="image-bg-positioning">
-                            <img src="//www.my-topup.store/assets/img/details-1.webp" alt="" class="img-fluid">
-                        </div>
-                        <div class="animation-item d-none d-md-block d-lg-block">
-                            <div class="p-4 w-75 rounded-custom d-flex white-bg hero-animated-card-1">
-                                <p class="gr-text-11 mb-0 text-mirage-2">“Wah udah murah, kualitas nya mantep banget lagi”</p>
-                                <div class="small-card-img ml-3">
-                                    <img src="/assets/img/people/team-2.webp" alt="My Topup Store" width="80px" class="rounded-circle img-fluid">
-                                </div>
-                            </div>
-                            <div class="p-4 w-75 rounded-custom d-flex secondary-bg hero-animated-card-2">
-                                <div class="small-card-img mr-3 text-white">
-                                    <img src="//www.my-topup.store/assets/img/people/team-5.webp" alt="My Topup Store" width="80px" class="rounded-circle img-fluid">
-                                </div>
-                                <p class="gr-text-11 mb-0 text-white">“Mantep dah, bintang 5 untuk my topup.”</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
+	<Hero top="Untuk Anda" 
+		  headline="Sebuah Solusi Untuk UMKM Indonesia"
+		  paragraf="Sebuah layanan peningkatkan interaksi akun untuk menambah kepercayaan konsumen terhadap brand Anda di Social Media."
+		  btn_text="Daftar Sekarang"
+		  btn_href="/">
+	</Hero>
     <!--hero section end-->
 
     <section class="pb-100">
@@ -80,64 +42,8 @@
     </section>
 
 
-       <!--about us section start-->
-    <section id="about" class="about-us ptb-100 gray-light-bg">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-md-4">
-                    <div class="about-content-right">
-                        <img src="//www.my-topup.store/assets/img/details-3.webp" alt="about us" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-md-7">
-                    <div class="about-content-left section-heading">
-                        <span class="text-uppercase color-secondary sub-title">Kami Hadir</span>
-                        <h2>Dengan Harga Yang Terjangkau</h2>
-                        <p>Kami adalah sebuah <strong>platform bisnis yang menyediakan berbagai layanan social media marketing</strong> yang bergerak terutama di Indonesia.
-                        	<br>
-Saat ini tersedia berbagai layanan seperti <strong>Followers, Likes, Views, dll.</strong>
-	<br>
-	<br>
-mendukung berbagai macam platform seperti <strong>Instagram, Facebook, Twitter, Youtube, dll.</strong></p>
-
-                        <div class="single-feature mb-4 mt-5">
-                            <div class="icon-box-wrap d-flex align-items-center mb-4">
-                                <div class="mr-3 icon-box" style="width:60px;height: 55px; font-size: 25px; line-height: 25px;">
-                                    <span class="ti-medall"></span>
-                                </div>
-                                <p class="mb-0">
-                                	<strong>
-                                	Kami selalu mengutamakan kualitas terbaik
-                                </strong> untuk layanan yang kami sediakan demi kepercayaan client.
-                            	</p>
-                            </div>
-
-                            <div class="icon-box-wrap d-flex align-items-center mb-4">
-                                <div class="mr-3 icon-box" style="width:60px;height: 55px; font-size: 25px; line-height: 25px;">
-                                    <span class="ti-face-smile"></span>
-                                </div>
-                                <p class="mb-0"><strong>
-                                	Layanan kami sangat terjangkau
-                                </strong> untuk bisnis anda, karena kami tahu keadaan anda.</p>
-                            </div>
-
-                            <div class="icon-box-wrap d-flex align-items-center mb-4">
-                                <div class="mr-3 icon-box" style="width:60px;height: 55px; font-size: 25px; line-height: 25px;">
-                                    <span class="ti-headphone-alt"></span>
-                                </div>
-                                <p class="mb-0"><strong>
-                                	Pelayanan dan bantuan
-                                </strong> untuk anda jika menemukan masalah/pertanyaan terkait layanan kami.</p>
-                            </div>
-
-                        </div>
-
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+   	<!--about us section start-->
+   	<DoHero />
     <!--about us section end-->
 
 </Layout>

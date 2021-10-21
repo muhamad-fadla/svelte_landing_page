@@ -4,13 +4,13 @@ const purgecss = require("@fullhuman/postcss-purgecss")({
   	defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
 });
 
-const dev = process.env.NODE_ENV == "production" ? false : true;
+const prod = process.env.NODE_ENV == "production"
 
 
 module.exports = {
   plugins: [
     require('autoprefixer'),
 
-    ...(!dev ? [purgecss] : [])
+    ...(prod ? [purgecss] : [])
   ]
 }

@@ -7,11 +7,13 @@
 	import SocialMediaEngagement from '@view/Services/SocialMediaEngagement/Index.svelte';
 
 	import HomeBlog from '@view/Blog/Home/Index.svelte';
+	import DetailBlog from '@view/Blog/Detail/Index.svelte';
+	import FeaturedBlog from '@view/Blog/Featured/Index.svelte';
 
 </script>
 
 <main>
-	<Router>
+	<Router basepath="/" url="/" primary={false} >
 		<Route path="/" component={Home} />
 		<Route path="/terms-of-services" component={TermsOfService} />
 		<Route path="/contact" component={Contact} />
@@ -20,12 +22,18 @@
 		</Route>
 
 		<Route path="/blogs/*">
-			<Route path="/" component={HomeBlog} />
+			<Route path="/" component={HomeBlog}/>
+			<Route path="/featured-posts" component={FeaturedBlog} />
+		</Route>
+
+		<Route path="/blog/:slug" let:params>
+
+			<DetailBlog slug={params['slug']} />
 		</Route>
 	</Router>
 </main>
 
-<style global lang="postcss">
+<style global lang="css">
 	@import url("./assets/css/bootstrap.min.css");
 	@import url("./assets/css/animate.min.css");
 	@import url("./assets/css/style.css");

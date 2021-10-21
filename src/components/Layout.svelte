@@ -3,6 +3,7 @@
 
 	import Navbar from './Layouts/Navbar.svelte';
 	import Footer from './Layouts/Footer.svelte';
+	import { fade } from 'svelte/transition';
 
 	let brand_name = "Sociality"
 	let brand_domain = "sociality.my.id"
@@ -10,6 +11,7 @@
 	export let title = "Jasa Social Media & Digital Marketing Indonesia - " + brand_name;
 	export let description = "Jasa Social Media & Digital Marketing Indonesia dengen harga terjangkau";
 	export let keywords = "social media, social media marketing, digital merketing, followers, instgram followers free - " + brand_domain;
+	export let image = "https://miaw.my-topup.store/assets/img/favicon.webp";
 
 	// onMount(() => {
 
@@ -35,11 +37,26 @@
 	// //     });
 	// // }
 
+    if (typeof gtag !== "undefined") {
+        gtag("event", "page_view", {
+            page_title: title,
+            page_location: window.location.href,
+            page_path: window.location.hash.slice(1),
+            send_to: "G-SV6EXBTFVH",
+        });
+    }
+
+	onMount(() => {
+		window.focus();
+
+	    window.scrollTo(0, 0);
+	})
+
 </script>	
 
 <Navbar />
-
-<div class="main">		
+ 
+<div class="main" transition:fade|local="{{delay: 150, duration: 300}}">		
 	<slot />
 </div>
 
@@ -57,7 +74,7 @@
     <meta property="og:image:alt"  content="{brand_name} solusi online shop indonesia" />
 
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Jasa Social Media & Digital Marketing Indonesia - {brand_domain}" />
+    <meta name="twitter:title" content="{title}" />
     <meta name="twitter:site" content="@{brand_domain}" />
     <meta name="twitter:image" content="/assets/img/favicon.webp" />
     <meta name="twitter:description"  content="{description}">
@@ -67,9 +84,9 @@
     <meta property="og:locale" content="id-ID" />
     <meta property="og:locale:alternate" content="en-us" />
     <meta property="og:site_name" content="{brand_name}" />
-    <meta  property="og:image" itemprop="image"  content="https://www.my-topup.store/assets/img/favicon.webp" />
-    <meta property="og:image" content="//www.my-topup.store/assets/img/favicon-300x200.webp" />
-    <meta property="og:image:url" content="//www.my-topup.store/assets/img/favicon-300x200.webp" />
+    <meta  property="og:image" itemprop="image"  content={image} />
+    <meta property="og:image" content={image} />
+    <meta property="og:image:url" content={image} />
     
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","name":"{title}"}</script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"{title}"}</script>

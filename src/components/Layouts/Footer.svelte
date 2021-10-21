@@ -1,5 +1,5 @@
 <div class="shape-img subscribe-wrap">
-    <img src="//www.my-topup.store/assets/img/layout/footer-top-shape.png" alt="footer shape" class="img-fluid">
+    <img src="https://miaw.my-topup.store/assets/img/layout/footer-top-shape.png" alt="footer shape" class="img-fluid">
   
 </div>
 
@@ -11,7 +11,7 @@
             <div class="row justify-content-between">	
                 <div class="col-md-12 col-lg-4 mb-4 mb-md-4 mb-sm-4 mb-lg-0">
                     <div class="footer-nav-wrap text-white">
-                        <img src="/assets/img/favicon.webp" alt="footer logo" width="120" class="img-fluid mb-3">
+                        <img src="https://miaw.my-topup.store/assets/img/favicon.webp" alt="footer logo" width="120" class="img-fluid mb-3">
                         <p>Sebuah layanan peningkatkan interaksi akun untuk menambah kepercayaan konsumen terhadap brand Anda di Social Media.</p>
 
                     </div>
@@ -59,12 +59,12 @@
                                 <h5 class="mb-3 text-white">Location</h5>
                                 <ul class="list-unstyled support-list">
                                     <li class="mb-2 d-flex align-items-center"><span class="ti-location-pin mr-2"></span>
-                                        121 King Melbourne
-                                        <br>Australia 3000
+                                        Jl. Prof. Muh. Yamin
+                                        <br>Jawa Tengah, Indonesia
                                     </li>
-                                    <li class="mb-2 d-flex align-items-center"><span class="ti-mobile mr-2"></span> <a href="tel:+61283766284"> +61 2 8376 6284</a></li>
-                                    <li class="mb-2 d-flex align-items-center"><span class="ti-email mr-2"></span><a href="mailto:mail@example.com"> mail@example.com</a></li>
-                                    <li class="mb-2 d-flex align-items-center"><span class="ti-world mr-2"></span><a href="/"> www.yourdomain.com</a></li>
+                                    <li class="mb-2 d-flex align-items-center"><span class="ti-mobile mr-2"></span> <a href="tel:+61283766284"> +62 858 003929 76</a></li>
+                                    <li class="mb-2 d-flex align-items-center"><span class="ti-email mr-2"></span><a href="mailto:mail@example.com"> support@my-topup.store</a></li>
+                                    <li class="mb-2 d-flex align-items-center"><span class="ti-world mr-2"></span><a href="/"> www.my-topup.store</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -78,7 +78,7 @@
                 <div class="row">
                     <div class="col-md-6 col-lg-7">
                         <div class="copyright-wrap small-text">
-                            <p class="mb-0 text-white">© ThemeTags Design Agency, All rights reserved</p>
+                            <p class="mb-0 text-white">© Sociality, All rights reserved</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-5">

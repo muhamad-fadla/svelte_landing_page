@@ -26,7 +26,23 @@
 /*
 	Change Background footer
 */
-.bf-se {background: url('//www.my-topup.store/assets/img/layout/footer-bg.webp')no-repeat center top / cover;}
+.bf-se {background: url('https://miaw.my-topup.store/assets/img/layout/footer-bg.webp')no-repeat center top / cover;}
+
+
+/*
+	MY STYLE
+*/
+
+.prose img {
+    width: 100%;
+    height: 100%;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
 
 
 /* -----------------------------------------
@@ -2812,6 +2828,8 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     width: 100%;
     display: block;
 }
+
+
 
 .post-header {
     margin: 15px 0 20px;
